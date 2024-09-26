@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+:root {
+  --dark-purple: rgb(10, 0, 25);
+  --purple: #6d2b84;
+  --pink: #ed3a85;
+  --darker-pink: #9b1f53;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  padding: 2rem; /* Add padding for spacing */
 }
 
-.App-link {
-  color: #61dafb;
+.text-content {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mainText {
+  font-weight: bolder;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 4rem; /* Responsive unit for text size */
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-img {
+  width: 50%; /* More flexible width */
+  max-width: 400px; /* Prevent the image from getting too large */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Keep circular shape */
+  margin-right: 5%;
+}
+
+@media (max-width: 768px) {
+  .mainText {
+    font-size: 3rem; /* Reduce font size on smaller screens */
+    margin-left: 5%;
+    margin-right: 5%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main-img {
+    width: 70%; /* Make the image larger on smaller screens */
+    margin: 0 auto; /* Center image */
+  }
+
+  .container {
+    flex-direction: column; /* Stack text and image vertically on small screens */
+    text-align: center; /* Center text for a better mobile experience */
   }
 }
