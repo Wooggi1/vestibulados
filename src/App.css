@@ -8,30 +8,48 @@
 .container {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 20px;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
   padding: 2rem; /* Add padding for spacing */
 }
 
 .text-content {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
 }
 
 .mainText {
   font-weight: bolder;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-right: 10%;
   font-size: 4rem; /* Responsive unit for text size */
   font-family: 'Poppins', sans-serif;
 }
 
 .main-img {
-  width: 50%; /* More flexible width */
-  max-width: 400px; /* Prevent the image from getting too large */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Keep circular shape */
-  margin-right: 5%;
+  width: 100%; /* Faz com que a imagem ocupe todo o espaço disponível */
+  max-width: 400px; /* Aumenta o tamanho máximo da largura */
+  height: 400px; /* Define a altura igual à largura para garantir um quadrado */
+  border-radius: 50%; /* Garante que a imagem continue circular */
+  object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorcer */
+  margin-right: 50px;
+  margin-left: 100px;
+  flex: 3;
 }
+.button-saibaMais{
+  font-family: 'Poppins', sans-serif;
+
+  background-color: #9b1f53;
+  color: white;
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+}
+
 
 @media (max-width: 768px) {
   .mainText {
@@ -43,6 +61,7 @@
   .main-img {
     width: 70%; /* Make the image larger on smaller screens */
     margin: 0 auto; /* Center image */
+    flex: 2;
   }
 
   .container {
