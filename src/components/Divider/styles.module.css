@@ -1,0 +1,45 @@
+.divider {
+    display: block;
+    position: relative;
+    width: 90%;
+    height: 2px;
+    border: none;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #3399cc, #e3d15f, #cc3366);
+    animation-duration: 2s;
+    animation-name: slide;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    margin-left: 5%;
+    border-radius: 5%;
+    margin-top: 5%;
+    
+  
+  &--delay {
+    animation-delay: 1s;
+  }
+    
+    &::before, &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        top: -1px;
+        background: white;
+    }
+    
+    &::before {
+        left: 0;
+        top: -1px;
+    }
+    
+    &::after {
+        right: 0;
+    }
+}
+
+@keyframes slide {
+    from { background-position: left 0; }
+    to { background-position: right 0; }
+}

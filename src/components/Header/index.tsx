@@ -8,11 +8,11 @@ export function Header() {
         <h2>Vestibulandos</h2>
       
         <nav className={styles.menuNav}>
-          <a>Home</a>
-          <a>Sobre nós</a>
-          <a>Planos</a>
-          <a>Login</a>
-          <button><a>Sign in</a></button>
+          <a href='#home'>Home</a>
+          <a href='#sobre'>Sobre</a>
+          <a href='#planos'>Planos</a>
+          <button><a>Login</a></button>
+          <button><a>Cadastro</a></button>
         </nav>
       </div>
     </header>

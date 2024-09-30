@@ -4,7 +4,9 @@ import '@fontsource/poppins'
 import { Header } from './components/Header';
 import { useState } from 'react';
 import Modal from './components/Modal';
-
+import { Divider } from './components/Divider';
+import { Sobre } from './components/Sobre';
+import { Planos } from './components/Planos';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -16,10 +18,11 @@ function App() {
   const closeModal = () => {
     setIsModalOpen(false)
   }
+
   return (
     <div>
       <Header/>
-      <div className="container">
+      <div className="container" id='home'>
         <div className='text-content'>
           <h1 className="mainText">Treine<br/>questões com<br/>amigos</h1>
           <p className='secondary-text'>Vestibulandos é um app que  permite que 
@@ -36,6 +39,10 @@ function App() {
           <img className="main-img" src='/images/img-students.jpg'/>
         </div>
       </div>
+      <Divider />
+      <Sobre />
+      <Divider />
+      <Planos />
       {isModalOpen && (
         <Modal closeModal={closeModal}></Modal>
       )}

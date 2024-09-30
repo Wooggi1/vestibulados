@@ -8,54 +8,54 @@
 .container {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
   flex-wrap: wrap; 
-  padding-top: 2rem; 
+  padding-top: 2rem;
   padding-right: 0;
   padding-left: 0;
+  margin-top: 3%;
 }
-
 
 .text-content {
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 10px;
+  gap: 1rem;
   padding: 0;
-  margin-left: 7rem;
+  margin-left: 7vw; 
 }
 
 .mainText {
   font-weight: bolder;
-  font-size: 145px; 
+  font-size: 5vw; 
   font-family: 'Poppins', sans-serif;
-  line-height: 160px;
+  line-height: 1.1; 
   margin-bottom: 1rem;
 }
 
 .secondary-text {
-  font-size: 25px;
+  font-size: 1.5rem; 
 }
 
 .main-img {
-  width: 100%; /* Faz com que a imagem ocupe todo o espaço disponível */
-  max-width: 500px; /* Aumenta o tamanho máximo da largura */
-  height: 500px; /* Define a altura igual à largura para garantir um quadrado */
-  border-radius: 50%; /* Garante que a imagem continue circular */
-  object-fit: cover; /* Garante que a imagem preencha o contêiner sem distorcer */
+  width: 100%; 
+  max-width: 30vw; 
+  height: 30vw; 
+  border-radius: 50%; 
+  object-fit: cover; 
   flex: 3;
   padding: 0;
-  margin-right: 10rem;
+  margin-right: 10vw;
 }
 
-.button-saibaMais{
+.button-saibaMais {
   font-family: 'Poppins', sans-serif;
-  font-size: 25px;
+  font-size: 1.5rem; 
   font-weight: bold;
   background-color: #9b1f53;
   color: white;
-  width: 230px;
-  height: 60px;
+  width: 15vw;
+  height: 4rem; 
   border-radius: 30px;
   border: none;
   padding: 1.2rem;
@@ -67,30 +67,77 @@
   margin-top: 1.5rem;
 }
 
-.button-saibaMais .circle {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border-radius: 50%;
-  margin-right: 10px;
+.button-saibaMais:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
 }
 
+.button-saibaMais .circle {
+  width: 1.5rem; 
+  height: 1.5rem; 
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 0.5rem; 
+}
 
 @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    width: 100%; 
+    padding: 0;
+  }
+
   .mainText {
-    font-size: 3rem; 
-    margin-left: 5%;
-    margin-right: 5%;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .secondary-text {
+    font-size: 1.25rem; 
   }
 
   .main-img {
-    width: 70%; 
-    margin: 0 auto; 
-    flex: 2;
+    display: none;
   }
 
-  .container {
-    flex-direction: column; 
-    text-align: center; 
+  .text-content {
+    align-items: center;
+    margin-left: 0;
+    gap: 1rem;
+  }
+
+  .button-saibaMais {
+    width: 80%; 
+    margin-left: 0;
+    margin-right: 0;
   }
 }
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+}
+
+/* Randomly position stars */
+.star:nth-child(1) { top: 10%; left: 20%; }
+.star:nth-child(2) { top: 15%; left: 40%; }
+.star:nth-child(3) { top: 25%; left: 60%; }
+.star:nth-child(4) { top: 35%; left: 80%; }
+.star:nth-child(5) { top: 45%; left: 10%; }
+.star:nth-child(6) { top: 55%; left: 50%; }
+.star:nth-child(7) { top: 65%; left: 70%; }
+.star:nth-child(8) { top: 75%; left: 30%; }
+.star:nth-child(9) { top: 85%; left: 90%; }
+
+
+
