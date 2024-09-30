@@ -3,7 +3,7 @@ import styles from './styles.module.css'
 export function Planos() {
   return(
     <>
-      <div className={styles.container}>
+      <div className={styles.container} id='planos'>
         <h1>Planos insanos</h1>
       </div>
       <div className={styles.imgContainer}>
