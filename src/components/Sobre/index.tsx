@@ -5,15 +5,14 @@ export function Sobre() {
     <>
       <div id='sobre' className={styles.container}>
         <h1>Sobre nós</h1>
-        <p>Somos um grupo de estudantes universitários que adoram jogar e competir.
-          A ideia do vestibulados surgiu da vontade de transformar o estudo
-          em algo divertido e ao mesmo tempo competitivo, com rankings e pontuações.
-          Competir com amigos e evoluir juntos é o objetivo final do jogo e nós
-          buscamos conseguir prover essa experiência para todos que jogarem
-          vestibulados, bom jogo e bons estudos a todos!</p>
-      </div>
-      <div className={styles.imgContainer}>
-        <img src='images/img-sobre.jpg'></img>
+        <p>Nós somos um grupo de universitários apaixonados por jogos e competições.
+          A ideia do Vestibulados nasceu da nossa vontade de transformar o estudo em 
+          uma experiência divertida e envolvente, com um toque competitivo. Com rankings, 
+          pontuações e desafios entre amigos, queremos que o aprendizado seja uma jornada 
+          colaborativa e emocionante. Nosso objetivo é oferecer uma forma de estudo que una 
+          diversão e progresso, onde você possa competir, aprender e evoluir junto com seus 
+          amigos. Desejamos a todos uma excelente experiência no Vestibulados – 
+          bons jogos e ótimos estudos!</p>
       </div>
     </>
   )

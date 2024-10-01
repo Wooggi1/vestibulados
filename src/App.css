@@ -5,6 +5,18 @@
   --darker-pink: #9b1f53;
 }
 
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-30px); scale: (1);
+  }
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -14,6 +26,7 @@
   padding-right: 0;
   padding-left: 0;
   margin-top: 3%;
+  animation: fade-up 0.5s;
 }
 
 .text-content {

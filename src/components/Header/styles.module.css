@@ -2,11 +2,23 @@
   margin: 0;
 }
 
+@keyframes fade-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px) scale(0.9)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(5px); scale: (1);
+  }
+}
+
 .headerContainer {
   height: 5rem;
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  
+  animation: fade-down 0.5s;
 }
 
 .headerContent {
