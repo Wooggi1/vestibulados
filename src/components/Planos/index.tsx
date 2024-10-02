@@ -1,35 +1,82 @@
-import styles from './styles.module.css'
+import styles from './styles.module.css';
 
 export function Planos() {
-  return(
+  return (
     <>
       <div className={styles.container} id='planos'>
-        <h1 className={styles.title}>Planos insanos</h1>
-        <div className={styles.wrapper}>
-          <div className={styles.planos}>
-            <h1 className={styles.planosText}>R$0/mês</h1>
-            <h2 className={styles.planosText}>Tier Free</h2>
-            <ul>
-              <li className={`${styles.listElement} ${styles.have}`}>Acesso ao jogo</li>
-              <li className={`${styles.listElement} ${styles.have}`}>Criação de salas</li>
-              <li className={`${styles.listElement} ${styles.have}`}>Acessar salas</li>
-              <li className={`${styles.listElement} ${styles.dont}`}>Zero propagandas</li>
-              <li className={`${styles.listElement} ${styles.dont}`}>Decoração de perfil</li>
-            </ul>
+        <h1 className={styles.demoTitle}>
+          Planos Insanos
+        </h1>
+
+        <div className={styles.pricingTable}>
+          <div className={styles.ptableItem}>
+            <div className={styles.ptableSingle}>
+              <div className={styles.ptableHeader}>
+                <div className={styles.ptableTitle}>
+                  <h2>Free</h2>
+                </div>
+                <div className={styles.ptablePrice}>
+                  <h2>
+                    <small>R$</small>0<span>/mês</span>
+                  </h2>
+                </div>
+              </div>
+              <div className={styles.ptableBody}>
+                <div className={styles.ptableDescription}>
+                  <ul>
+                    <li>Acesso ao jogo</li>
+                    <li>Criação de salas</li>
+                    <li>Acessar salas</li>
+                    <li className={styles.dont}>Zero propagandas</li>
+                    <li className={styles.dont}>Decoração de perfil</li>
+                  </ul>
+                </div>
+              </div>
+              <div className={styles.ptableFooter}>
+                <div className={styles.ptableAction}>
+                  <a href="">Assinar</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className={styles.planos}>
-          <h1 className={styles.planosText}>R$15/mês</h1>
-            <h2 className={styles.planosText}>Tier Pro</h2>
-            <ul>
-              <li className={`${styles.listElement} ${styles.have}`}>Acesso ao jogo</li>
-              <li className={`${styles.listElement} ${styles.have}`}>Criação de salas</li>
-              <li className={`${styles.listElement} ${styles.have}`}>Acessar salas</li>
-              <li className={`${styles.listElement} ${styles.have}`}>Zero propagandas</li>
-              <li className={`${styles.listElement} ${styles.have}`}>Decoração de perfil</li>
-            </ul>
+
+          <div className={`${styles.ptableItem} ${styles.featuredItem}`}>
+            <div className={styles.ptableSingle}>
+              <div className={styles.ptableHeader}>
+                <div className={styles.ptableStatus}>
+                  <span>Hot</span>
+                </div>
+                <div className={styles.ptableTitle}>
+                  <h2>Pro</h2>
+                </div>
+                <div className={styles.ptablePrice}>
+                  <h2>
+                    <small>R$</small>15<span>/mês</span>
+                  </h2>
+                </div>
+              </div>
+              <div className={styles.ptableBody}>
+                <div className={styles.ptableDescription}>
+                  <ul>
+                    <li>Acesso ao jogo</li>
+                    <li>Criação de salas</li>
+                    <li>Acessar salas</li>
+                    <li>Zero propagandas</li>
+                    <li>Decoração de perfil</li>
+                  </ul>
+                </div>
+              </div>
+              <div className={styles.ptableFooter}>
+                <div className={styles.ptableAction}>
+                  <a href="">Assinar</a>
+                </div>
+              </div>
+            </div>
           </div>
+
+          
         </div>
       </div>
     </>
-  )
+  );
 }
