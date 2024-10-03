@@ -24,9 +24,9 @@ export function Planos() {
               <div className={styles.ptableBody}>
                 <div className={styles.ptableDescription}>
                   <ul>
-                    <li>Acesso ao jogo</li>
-                    <li>Criação de salas</li>
-                    <li>Acessar salas</li>
+                    <li className={styles.have}>Acesso ao jogo</li>
+                    <li className={styles.have}>Criação de salas</li>
+                    <li className={styles.have}>Acessar salas</li>
                     <li className={styles.dont}>Zero propagandas</li>
                     <li className={styles.dont}>Decoração de perfil</li>
                   </ul>
@@ -58,11 +58,11 @@ export function Planos() {
               <div className={styles.ptableBody}>
                 <div className={styles.ptableDescription}>
                   <ul>
-                    <li>Acesso ao jogo</li>
-                    <li>Criação de salas</li>
-                    <li>Acessar salas</li>
-                    <li>Zero propagandas</li>
-                    <li>Decoração de perfil</li>
+                    <li className={styles.have}>Acesso ao jogo</li>
+                    <li className={styles.have}>Criação de salas</li>
+                    <li className={styles.have}>Acessar salas</li>
+                    <li className={styles.have}>Zero propagandas</li>
+                    <li className={styles.have}>Decoração de perfil</li>
                   </ul>
                 </div>
               </div>

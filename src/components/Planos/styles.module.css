@@ -233,3 +233,17 @@ h1.demoTitle a {
 .ptablePrice{
   gap: 1000px;
 }
+
+.dont {
+  background-image: url('/public/images/wrong-mark.png');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+  background-size: 15px;
+}
+
+.have {
+  background-image: url('/public/images/check-mark.png');
+  background-repeat: no-repeat;
+  background-position: left 20px center;
+  background-size: 15px;
+}
