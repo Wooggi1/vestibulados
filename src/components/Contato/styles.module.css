@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+}
+
+.inputField input, textarea {
+  margin: 3%;
+  padding: 3%;
+  border-radius: 5px;
+  border-style: none;
+  resize: none;
+  width: 500px;
+}
+
+.inputField textarea {
+  height: 200px;
+}
+
+.imgContainer{
+  float: right;
+}
+
+.img {
+  width: 100%; 
+  max-width: 30vw; 
+  height: 30vw; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  flex: 3;
+  padding: 0;
+  transform: translateX(10vw)
+}
+

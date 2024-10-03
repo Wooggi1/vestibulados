@@ -61,7 +61,7 @@
   margin-right: 10vw;
 }
 
-.button-saibaMais {
+.button {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem; 
   font-weight: bold;
@@ -80,12 +80,12 @@
   margin-top: 1.5rem;
 }
 
-.button-saibaMais:hover {
+.button:hover {
   opacity: 0.5;
   transition: opacity 0.3s ease;
 }
 
-.button-saibaMais .circle {
+.button .circle {
   width: 1.5rem; 
   height: 1.5rem; 
   background-color: white;
@@ -126,31 +126,13 @@
     gap: 1rem;
   }
 
-  .button-saibaMais {
+  .button {
     width: 80%; 
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-.star {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background: white;
-  border-radius: 50%;
-}
-
-/* Randomly position stars */
-.star:nth-child(1) { top: 10%; left: 20%; }
-.star:nth-child(2) { top: 15%; left: 40%; }
-.star:nth-child(3) { top: 25%; left: 60%; }
-.star:nth-child(4) { top: 35%; left: 80%; }
-.star:nth-child(5) { top: 45%; left: 10%; }
-.star:nth-child(6) { top: 55%; left: 50%; }
-.star:nth-child(7) { top: 65%; left: 70%; }
-.star:nth-child(8) { top: 75%; left: 30%; }
-.star:nth-child(9) { top: 85%; left: 90%; }
 
 
 

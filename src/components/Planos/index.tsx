@@ -5,7 +5,7 @@ export function Planos() {
     <>
       <div className={styles.container} id='planos'>
         <h1 className={styles.demoTitle}>
-          Planos Insanos
+          Planos
         </h1>
 
         <div className={styles.pricingTable}>

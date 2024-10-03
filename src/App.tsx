@@ -7,6 +7,8 @@ import Modal from './components/Modal';
 import { Divider } from './components/Divider';
 import { Sobre } from './components/Sobre';
 import { Planos } from './components/Planos';
+import { Footer } from './components/Footer';
+import { Contato } from './components/Contato';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -30,7 +32,7 @@ function App() {
             treinar questões de maneira 
             didática<br/>e gameficada com seus amigos.
           </p>
-          <button className='button-saibaMais' onClick={openModal}>
+          <button className='button' onClick={openModal}>
             <span className="circle"></span>
             SAIBA MAIS
             </button>
@@ -43,6 +45,9 @@ function App() {
       <Sobre />
       <Divider />
       <Planos />
+      <Divider />
+      <Contato />
+      <Footer />
       {isModalOpen && (
         <Modal closeModal={closeModal}></Modal>
       )}
