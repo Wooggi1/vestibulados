@@ -8,7 +8,6 @@ import { Divider } from './components/Divider';
 import { Sobre } from './components/Sobre';
 import { Planos } from './components/Planos';
 import { Footer } from './components/Footer';
-import { Contato } from './components/Contato';
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -46,7 +45,6 @@ function App() {
       <Divider />
       <Planos />
       <Divider />
-      <Contato />
       <Footer />
       {isModalOpen && (
         <Modal closeModal={closeModal}></Modal>

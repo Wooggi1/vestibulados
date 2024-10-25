@@ -8,9 +8,9 @@ export function Header() {
         <h2>Vestibulados</h2>
       
         <nav className={styles.menuNav}>
-          <a href='#home'>Home</a>
-          <a href='#sobre'>Sobre</a>
-          <a href='#planos'>Planos</a>
+          <a href='#home' className={styles.navBtn}>Home</a>
+          <a href='#sobre' className={styles.navBtn}>Sobre</a>
+          <a href='#planos' className={styles.navBtn}>Planos</a>
           <button><a>Login</a></button>
           <button><a>Cadastro</a></button>
         </nav>

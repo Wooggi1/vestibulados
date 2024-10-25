@@ -51,7 +51,7 @@ export function Planos() {
                 </div>
                 <div className={styles.ptablePrice}>
                   <h2>
-                    <small>R$</small>15<span>/mês</span>
+                    <small>R$</small>40<span>/mês</span>
                   </h2>
                 </div>
               </div>
